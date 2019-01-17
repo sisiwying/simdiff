@@ -2,23 +2,23 @@ The program simdff is for identifying similar or different temporal gene express
 The expression value should be log2 transformed using command log2(value+0.01). And it is possible, it is
 best to transform the value use the following perl command:
 
-if(value>0.01){ log2_transformed_value = log2(value)}
-else {log2_transformed_value = log2(rand()*0.01)}
+if(value>0.01){ log2_transformed_value = log2(value);}
+else {log2_transformed_value = log2(rand()*0.01);}
 
 1) compile the program
 cd code
 make
 
 2) Preparing input file
-The input file is a gene times expression value matrix. The rows are genes and the columns are the
-expression value for different time points. There is no header given in the input file, and only expression
-values showing in the file. The values are separated by space.
+The input file is a gene times time point matrix. The rows are genes and the columns are the
+expression values for different time points. There is no header line given in the input file, and 
+only expression values showing in the file. The values are separated by space.
 
 3) Preparing _mu and _Sigma files
 There is a R scrpit included in the package named analysis.R. The script is used for generating
 _mu (mean expression for each time points across genes), and _Sigma (variance and covariance matrix
-for the expression matrix). You need specified the input file name and output file name. The two ouput
-files generated will be name output_mu.txt and output_Sigma.txt. To run the script:
+for the expression matrix). You need specify the input file name and output file name. The two ouput
+files generated will be named output_mu.txt and output_Sigma.txt. To run the script:
 
 Rscript analysis.R --args input.txt output
 
