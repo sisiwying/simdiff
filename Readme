@@ -25,10 +25,11 @@ Rscript analysis.R --args input.txt output
 4) Run the program
 The command for running the program using the specified input file and the _mu and _Sigma files is
 
-./simdiff input.txt output_mu.txt output_Sigma.txt -startg 0 -endg 1000
+./simdiff input.txt output_mu.txt output_Sigma.txt -ngene 1000 -ntime 90 -startg 0 -endg 10
 
-Note that you need to specify the start gene index and the end gene index using arguments -startg and
--endg. In the above example, it calculates the BF for the first 1000 genes (index 0 to 999).
+Note that you need to specify the number of genes and the number of time points using -ngene and
+-ntime arguments. Also, you need to specify the start gene index and the end gene index using arguments
+-startg and -endg. In the above example, it calculates the BF for the first 1000 genes (index 0 to 999).
 
 5) Program output
 The output will be printed to screen, unless the screen output is printed to a file, e.g., using "> results".
