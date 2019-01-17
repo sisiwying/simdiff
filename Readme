@@ -25,7 +25,7 @@ Rscript analysis.R --args input.txt output
 4) Run the program
 The command for running the program using the specified input file and the _mu and _Sigma files is
 
-./simdiff input.txt output_mu.txt output_Sigma.txt -ngene 1000 -ntime 90 -startg 0 -endg 10
+./simdiff input.txt output_mu.txt output_Sigma.txt -ngene 1000 -ntime 90 -startg 0 -endg 1000
 
 Note that you need to specify the number of genes and the number of time points using -ngene and
 -ntime arguments. Also, you need to specify the start gene index and the end gene index using arguments
