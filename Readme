@@ -12,7 +12,7 @@ make
 2) Preparing input file
 The input file is a gene times expression value matrix. The rows are genes and the columns are the
 expression value for different time points. There is no header given in the input file, and only expression
-values showing in the file. The values are seperated by space.
+values showing in the file. The values are separated by space.
 
 3) Preparing _mu and _Sigma files
 There is a R scrpit included in the package named analysis.R. The script is used for generating
